@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitação de Férias</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Solicitação de Férias</h1>
+    </header>
+
+    <form>
+      <!-- Informações do Colaborador -->
+      <section class="section">
+        <div class="row">
+          <div class="field">
+            <label for="colaborador">Colaborador</label>
+            <input type="text" id="colaborador" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label for="data">Data</label>
+            <input type="date" id="data" class="input-field" value="">
+          </div>
+          <div class="field status">
+            <label>Status</label>
+            <span class="badge">Solicitando</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="departamento">Departamento</label>
+            <input type="text" id="departamento" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label for="centro-custo">Centro de Custo</label>
+            <input type="text" id="centro-custo" class="input-field" placeholder="Digite o centro de custo">
+          </div>
+          <div class="field">
+            <label for="unidade-negocio">Unidade de Negócio</label>
+            <input type="text" id="unidade-negocio" class="input-field" placeholder="Digite a unidade de negócio">
+          </div>
+        </div>
+      </section>
+
+      <!-- Período Aquisitivo -->
+      <section class="section">
+        <h3>Período Aquisitivo</h3>
+        <div class="row">
+          <div class="field">
+            <label for="inicio">Início</label>
+            <input type="date" id="inicio" class="input-field" value="">
+            <small>2 anos atrás</small>
+          </div>
+          <div class="field">
+            <label for="fim">Fim</label>
+            <input type="date" id="fim" class="input-field" value="">
+            <small>7 meses atrás</small>
+          </div>
+          <div class="field">
+            <label for="saldo">Dias de Saldo</label>
+            <input type="number" id="saldo" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label for="limite">Limite</label>
+            <input type="date" id="limite" class="input-field" value="">
+            <small>em 5 meses</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solicitação de Férias -->
+      <section class="section">
+        <div class="row">
+          <div class="field">
+            <label for="inicio-ferias">Início das Férias</label>
+            <input type="date" id="inicio-ferias" class="input-field" value="">
+            <small>em 2 meses</small>
+          </div>
+          <div class="field">
+            <label for="dias">Dias</label>
+            <input type="number" id="dias" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label for="fim-ferias">Final das Férias</label>
+            <input type="date" id="fim-ferias" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label for="abono">Abono</label>
+            <input type="number" id="abono" class="input-field" value="">
+          </div>
+          <div class="field">
+            <label>1ª Parc. do 13º Salário</label>
+            <div class="radio-group">
+              <label><input type="radio" name="13salario" value="Sim" checked> Sim</label>
+              <label><input type="radio" name="13salario" value="Não"> Não</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button type="submit" class="button">Enviar Solicitação</button>
+    </form>
+  </div>
+</body>
+</html>
